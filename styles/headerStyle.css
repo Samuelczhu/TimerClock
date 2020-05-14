@@ -1,0 +1,80 @@
+/************** This file deal with style for header and footer ***************/
+
+* {
+    /* delete all unwanted padding and margin */
+    padding: 0;
+    margin: 0;
+    /*default font family*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/************ deal with the top menu bar ************/
+
+header {
+    background: black;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 10px;
+}
+
+header nav ul li:first-child {
+    margin-left: 20px;
+}
+
+header nav ul li:hover {
+    background: rgb(56, 56, 56);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#dropdown_icon {
+    display: none;
+}
+
+
+/* responsive design for mobile */
+
+@media screen and (max-width: 600px) {
+    header nav ul {
+        text-align: right;
+    }
+    #dropdown_icon {
+        display: inline-block;
+        position: relative;
+    }
+    header nav ul li {
+        display: none;
+    }
+    header nav ul.mobile #dropdown_icon {
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        top: 0px;
+    }
+    header nav ul.mobile li {
+        display: block;
+        text-align: left;
+    }
+    header nav ul li:first-child {
+        margin-left: 0px;
+    }
+}
+
+
+/* deal with footer */
+
+footer {
+    background: black;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+}

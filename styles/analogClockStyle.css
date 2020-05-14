@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    /*100% viewport*/
+    height: 100vh;
+    /*prevent scrollbar from showing*/
+    overflow: hidden;
+    /*show a nice background*/
+    background: linear-gradient(45deg, #cc402e, #a09e16);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgb(80, 60, 60), 0 0 5px rgb(231, 72, 9);
+}
+
+.analog_clock {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid black;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.analog_clock::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #cc402e41, #a09e1648);
+}
+
+.analog_clock::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 17px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.digit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.digit:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 10px;
+    background-color: black;
+}
+
+#digit1 {
+    transform: rotate(30deg);
+}
+
+#digit1 div {
+    transform: rotate(-30deg);
+}
+
+#digit2 {
+    transform: rotate(60deg);
+}
+
+#digit2 div {
+    transform: rotate(-60deg);
+}
+
+#digit3 {
+    transform: rotate(90deg);
+}
+
+#digit3 div {
+    transform: rotate(-90deg);
+}
+
+#digit4 {
+    transform: rotate(120deg);
+}
+
+#digit4 div {
+    transform: rotate(-120deg);
+}
+
+#digit5 {
+    transform: rotate(150deg);
+}
+
+#digit5 div {
+    transform: rotate(-150deg);
+}
+
+#digit6 {
+    transform: rotate(180deg);
+}
+
+#digit6 div {
+    transform: rotate(-180deg);
+}
+
+#digit7 {
+    transform: rotate(210deg);
+}
+
+#digit7 div {
+    transform: rotate(-210deg);
+}
+
+#digit8 {
+    transform: rotate(240deg);
+}
+
+#digit8 div {
+    transform: rotate(-240deg);
+}
+
+#digit9 {
+    transform: rotate(270deg);
+}
+
+#digit9 div {
+    transform: rotate(-270deg);
+}
+
+#digit10 {
+    transform: rotate(300deg);
+}
+
+#digit10 div {
+    transform: rotate(-300deg);
+}
+
+#digit11 {
+    transform: rotate(330deg);
+}
+
+#digit11 div {
+    transform: rotate(-330deg);
+}
+
+.hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.second {
+    width: 1px;
+    height: 40%;
+}
+
+.minute {
+    height: 38%;
+    width: 3px;
+    border-radius: 2px;
+}
+
+.hour {
+    height: 28%;
+    width: 6px;
+    border-radius: 4px;
+}

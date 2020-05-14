@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles/headerStyle.css">
+    <link rel="stylesheet" href="styles/stopwatchStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu_bar">
+                <li><a href="index.html">Timer</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="analogClock.html">Analog Clock</a></li>
+                <li><a href="digitalClock.html">Digital Clock</a></li>
+                <li id="dropdown_icon">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="stopwatch">
+            <h1>Stopwatch</h1>
+            <div id="stopwatch_display">
+                <div class="display">
+                    <div id="hour_display">00</div>
+                    <div class="subtitle1">Hour</div>
+                </div>
+                <span>:</span>
+                <div class="display">
+                    <div id="minute_display">00</div>
+                    <div class="subtitle1">Minute</div>
+                </div>
+                <div class="display">
+                    <div id="second_display">00</div>
+                    <div class="subtitle1">Second</div>
+                </div>
+                <span>.</span>
+                <div class="display">
+                    <div id="millisecond_display">000</div>
+                    <div class="subtitle2">Millisecond</div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="start_button">Start</button>
+                <button id="stop_button">Stop</button>
+                <button id="reset_button">Reset</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>Stopwatch</footer>
+
+    <script src="scripts/menuScript.js"></script>
+    <script src="scripts/stopwatchScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+main {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(30, 22, 70), rgb(23, 97, 97));
+}
+
+h1 {
+    text-align: center;
+    margin: 80px 0px 10px 0px;
+    color: white;
+    text-shadow: 0 0 10px rgb(80, 60, 60), 0 0 5px rgb(57, 9, 231);
+}
+
+.timer {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgb(80, 60, 60), 0 0 5px rgb(57, 9, 231);
+}
+
+.timer div {
+    display: inline-block;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.timer div span {
+    display: block;
+    font-size: 2em;
+    background: rgb(4, 91, 173);
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+#hour,
+#minute,
+#second {
+    font-size: 5em;
+    background: rgb(3, 133, 255);
+}
+
+.start_time {
+    margin: 150px 0px 10px 0px;
+    color: white;
+    text-align: center;
+}
+
+#set_time {
+    display: inline-block;
+}
+
+#set_time div {
+    display: inline-block;
+}
+
+#set_time div span {
+    display: block;
+}
+
+.start_time h3 {
+    display: inline-block;
+    font-size: 1.5em;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.set_display :first-child {
+    font-size: 1em;
+    background-color: rgb(139, 41, 135);
+}
+
+.set_display :last-child,
+#set_time.edit input {
+    display: block;
+    font-size: 1.8em;
+    background-color: rgb(155, 50, 224);
+    height: 33px;
+    width: 55px;
+}
+
+.set_display :last-child:hover {
+    background-color: rgb(174, 68, 245);
+}
+
+#set_time input {
+    display: none;
+}
+
+#set_time.edit input {
+    display: initial;
+    background-color: white;
+    text-align: right;
+}
+
+#set_time.edit div :last-child {
+    display: none;
+}
+
+#set_time div {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.set_buttons {
+    display: none;
+}
+
+#set_time.edit .set_buttons_parent .set_buttons {
+    display: inline-block;
+    font-size: 1em;
+    width: 60px;
+    height: 30px;
+}
+
+#ok_button {
+    background: rgb(2, 145, 2);
+    margin-left: 10px;
+}
+
+#ok_button:hover {
+    background: rgb(15, 216, 15);
+}
+
+#cancel_button {
+    background: rgb(228, 19, 19);
+}
+
+#cancel_button:hover {
+    background: rgb(241, 53, 53);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 60px;
+}
+
+button {
+    font-size: 2em;
+    width: 100px;
+    height: 50px;
+    color: white;
+    margin: 0px 5px;
+    border: none;
+}
+
+#stop_button {
+    display: none;
+    background: rgb(211, 55, 16);
+}
+
+#stop_button:hover {
+    background: rgb(235, 82, 44);
+}
+
+#start_button {
+    display: inline-block;
+    background: rgb(8, 194, 8);
+}
+
+#start_button:hover {
+    background: rgb(18, 241, 18);
+}
+
+#set_button {
+    background: rgb(21, 98, 199);
+}
+
+#set_button:hover {
+    background: rgb(28, 121, 243);
+}
+
+
+/* responsive design for mobile */
+
+@media screen and (max-width: 500px) {
+    .timer div span {
+        font-size: 1.5em;
+        padding: 0px 5px;
+        margin: 0px 5px;
+    }
+    #hour,
+    #minute,
+    #second {
+        font-size: 3em;
+    }
+    button {
+        font-size: 1.5em;
+        width: 80px;
+        height: 40px;
+    }
+    .start_time h3 {
+        font-size: 1.2em;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .set_display :first-child {
+        font-size: 0.5em;
+    }
+    .set_display :last-child,
+    #set_time.edit input {
+        font-size: 1.3em;
+        height: 30px;
+        width: 40px;
+    }
+    #set_time.edit .set_buttons_parent .set_buttons {
+        font-size: 1em;
+        width: 50px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,105 @@
+main {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(125, 45, 143), rgb(156, 28, 28));
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0px 10px 0px;
+    color: white;
+    text-shadow: 0 0 10px rgb(74, 60, 80), 0 0 5px rgb(231, 9, 220);
+}
+
+#stopwatch_display {
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 25px 10px;
+}
+
+.display {
+    display: inline-block;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.display div {
+    display: block;
+    width: 110px;
+}
+
+#stopwatch_display span {
+    font-size: 5em;
+}
+
+#stopwatch_display span:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    transform: translateY(-30px)
+}
+
+#hour_display,
+#minute_display,
+#second_display {
+    font-size: 5em;
+    background-color: rgb(38, 102, 185);
+}
+
+#stopwatch_display :nth-child(4) {
+    margin-left: 20px;
+}
+
+.subtitle1 {
+    font-size: 1.5em;
+    background-color: rgb(42, 29, 160);
+}
+
+#millisecond_display {
+    height: auto;
+    font-size: 3em;
+    background-color: rgb(38, 185, 70);
+}
+
+.subtitle2 {
+    background-color: rgb(29, 160, 99);
+}
+
+.buttons {
+    margin-top: 120px;
+    text-align: center;
+}
+
+button {
+    font-size: 2em;
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#start_button {
+    display: inline-block;
+    background: green;
+}
+
+#start_button:hover {
+    background: rgb(0, 209, 0);
+}
+
+#stop_button {
+    display: none;
+    background: red;
+}
+
+#stop_button:hover {
+    background: rgb(247, 53, 53);
+}
+
+#reset_button {
+    background: indigo;
+}
+
+#reset_button:hover {
+    background: rgb(116, 2, 197);
+}

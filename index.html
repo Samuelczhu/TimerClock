@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles/headerStyle.css">
+    <link rel="stylesheet" href="styles/timerStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu_bar">
+                <li><a href="index.html">Timer</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="analogClock.html">Analog Clock</a></li>
+                <li><a href="digitalClock.html">Digital Clock</a></li>
+                <li id="dropdown_icon">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Countdown Timer</h1>
+        <div class="timer">
+            <div><span>Hour</span><span id="hour">00</span></div>
+            <div><span>Minute</span><span id="minute">00</span></div>
+            <div><span>Second</span><span id="second">00</span></div>
+        </div>
+        <div class="start_time">
+            <h3>Start time:</h3>
+            <div id="set_time">
+                <div class="set_display"><span>Hour</span>
+                    <input id="set_hour" type="number" min="0" max="23" step="1"></input>
+                    <span id="set_display1">00</span>
+                </div>
+                <div class="set_display"><span>Minute</span>
+                    <input id="set_minute" type="number" min="0" max="59" step="1"></input>
+                    <span id="set_display2">00</span>
+                </div>
+                <div class="set_display"><span>Second</span>
+                    <input id="set_second" type="number" min="0" max="59" step="1"></input>
+                    <span id="set_display3">00</span>
+                </div>
+                <div class="set_buttons_parent">
+                    <button class="set_buttons" id="ok_button">OK</button>
+                    <button class="set_buttons" id="cancel_button">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="start_button">Start</button>
+            <button id="stop_button">Stop</button>
+            <button id="set_button">Set</button>
+        </div>
+        <audio id="timesup_audio" src="audio/timesup.ogg" preload="auto"></audio>
+    </main>
+
+    <footer>Countdown Timer</footer>
+
+    <script src="scripts/menuScript.js"></script>
+    <script src="scripts/timerScript.js"></script>
+</body>
+
+</html>
