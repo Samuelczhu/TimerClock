@@ -40,6 +40,17 @@ header nav ul li a {
 }
 
 
+/* deal with footer */
+
+footer {
+    background: black;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+}
+
+
 /* responsive design for mobile */
 
 @media screen and (max-width: 600px) {
@@ -62,19 +73,13 @@ header nav ul li a {
     header nav ul.mobile li {
         display: block;
         text-align: left;
+        font-size: 1em;
+        padding: 7px 10px;
     }
     header nav ul li:first-child {
         margin-left: 0px;
     }
-}
-
-
-/* deal with footer */
-
-footer {
-    background: black;
-    color: white;
-    font-size: 1.1em;
-    padding: 10px;
-    text-align: center;
+    footer {
+        font-size: 0.8em;
+    }
 }

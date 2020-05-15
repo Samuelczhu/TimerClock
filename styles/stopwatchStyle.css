@@ -103,3 +103,31 @@ button {
 #reset_button:hover {
     background: rgb(116, 2, 197);
 }
+
+
+/*responsive design for mobile*/
+
+@media screen and (max-width: 600px) {
+    #stopwatch_display span {
+        font-size: 3em;
+    }
+    #hour_display,
+    #minute_display,
+    #second_display {
+        font-size: 3em;
+    }
+    button {
+        font-size: 1.5em;
+        width: 80px;
+        height: 40px;
+    }
+    .subtitle1 {
+        font-size: 1em;
+    }
+    #millisecond_display {
+        font-size: 2em;
+    }
+    .display div {
+        width: 80px;
+    }
+}

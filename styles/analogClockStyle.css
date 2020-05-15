@@ -195,3 +195,16 @@ h1 {
     width: 6px;
     border-radius: 4px;
 }
+
+
+/* responsive design for mobile */
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .analog_clock {
+        width: 300px;
+        height: 300px;
+    }
+}
