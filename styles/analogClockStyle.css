@@ -4,7 +4,7 @@
 
 main {
     /*100% viewport*/
-    height: 100vh;
+    min-height: 100vh;
     /*prevent scrollbar from showing*/
     overflow: hidden;
     /*show a nice background*/
@@ -28,6 +28,7 @@ h1 {
     background-color: white;
     left: 50%;
     transform: translate(-50%, 0);
+    margin-bottom: 50px;
 }
 
 .analog_clock::after {

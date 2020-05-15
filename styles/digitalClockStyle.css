@@ -1,5 +1,5 @@
 main {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     background: linear-gradient(45deg, rgb(38, 102, 52), rgb(149, 151, 29));
 }
@@ -15,7 +15,7 @@ h1 {
     text-align: center;
     font-size: 5em;
     color: white;
-    text-shadow: 0 0 10px rgb(80, 60, 60), 0 0 5px rgb(72, 231, 9)
+    text-shadow: 0 0 10px rgb(80, 60, 60), 0 0 5px rgb(72, 231, 9);
 }
 
 .digital_clock div {
@@ -81,5 +81,14 @@ h1 {
     .digital_clock {
         font-size: 1em;
         border-width: 1px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    h1 {
+        margin-top: 100px;
+    }
+    .digital_clock {
+        margin-bottom: 120px;
     }
 }

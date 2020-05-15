@@ -1,5 +1,5 @@
 main {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     background: linear-gradient(45deg, rgb(30, 22, 70), rgb(23, 97, 97));
 }
@@ -129,6 +129,7 @@ h1 {
 .buttons {
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 button {
@@ -201,7 +202,7 @@ button {
     }
     #set_time.edit .set_buttons_parent .set_buttons {
         font-size: 1em;
-        width: 50px;
+        width: 60px;
         height: 30px;
     }
 }
