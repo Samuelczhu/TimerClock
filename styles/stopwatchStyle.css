@@ -130,4 +130,7 @@ button {
     .display div {
         width: 80px;
     }
+    .subtitle2 {
+        font-size: 0.8em;
+    }
 }
